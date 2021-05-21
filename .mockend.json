@@ -12,30 +12,30 @@
         "cnpj": "string"
     },
     "ExternalAudit": {
-      "initialDate": "string",
-      "finalDate": "string",
-      "form": "RbaForm",
-      "provider": "Provider",
-      "planningSections": "AuditSection[]",
-      "status": "TypeContent",
-      "progress": "int",
-      "score": "int"
+        "initialDate": "date",
+        "finalDate": "date",
+        "form": "RbaForm",
+        "provider": "Provider",
+        "planningSections": "AuditSection[]",
+        "status": "TypeContent",
+        "progress": "int",
+        "score": "int"
     },
     "AuditSection" : {
-      "enabled": "boolean",
-      "section": "RbaSection",
-      "planningTopics": "AuditTopic[]"
+        "enabled": "boolean",
+        "section": "RbaSection",
+        "planningTopics": "AuditTopic[]"
     },
     "AuditTopic": {
-      "enabled": "boolean",
-      "topic": "RbaQuestionTopic",
-      "planningQuestions": "AuditQuestion[]"
+        "enabled": "boolean",
+        "topic": "RbaQuestionTopic",
+        "planningQuestions": "AuditQuestion[]"
     },
     "AuditQuestion": {
-      "enabled": "boolean",
-      "question": "RbaQuestion",
-      "answer": "TypeContent",
-      "evidence": "string[]"
+        "enabled": "boolean",
+        "question": "RbaQuestion",
+        "answer": "TypeContent",
+        "evidence": "string[]"
     },
     "RbaForm": {
         "title": "string",
@@ -44,48 +44,48 @@
         "history": "RbaFormHistory",
         "rbaStandard": "RbaStandart",
         "sections": "RbaSection[]"
-      },
-      "RbaSection": {
+    },
+    "RbaSection": {
         "title": "string",
         "icon": "string",
         "topics": "RbaQuestionTopic[]",
         "standard": "RbaStandart"
-      },
-      "RbaQuestionTopic": {
+    },
+    "RbaQuestionTopic": {
         "title": "string",
         "description": "string",
         "progress": "int",
         "questions": "RbaQuestion[]"
-      },
-      "RbaQuestion": {
+    },
+    "RbaQuestion": {
         "title": "string",
         "description": "string",
         "evidence": "string",
         "answer": "DataType",
         "evaluation": "DataType",
         "status": "DataType"
-      },
-      "RbaStandart": {
+    },
+    "RbaStandart": {
         "title": "string",
         "version": "string",
         "year": "int",
         "reference": "string",
         "questions": "RbaSection[]"
-      },
-      "TypeContent": {
+    },
+    "TypeContent": {
         "name": "string",
         "description": "string",
         "code": "string",
         "immutable": "boolean",
         "visible": "boolean",
         "dataType": "DataType"
-      },
-      "DataType": {
+    },
+    "DataType": {
         "name": "string",
         "description": "string",
         "code": "string",
         "immutable": "boolean",
         "visible": "boolean",
         "typesValues": "TypeContent[]"
-      }
+    }
   }
