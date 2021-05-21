@@ -1,91 +1,102 @@
-{
-    "Provider": {
-        "pid": "string",
-        "name": "string",
-        "address": "string",
-        "city": "string",
-        "stateRegistration": "string",
-        "country": "string",
-        "postalCode": "string",
-        "phone": "string",
-        "homepage": "string",
-        "cnpj": "string"
-    },
-    "ExternalAudit": {
-        "initialDate": "date",
-        "finalDate": "date",
-        "form": "RbaForm",
-        "provider": "Provider",
-        "planningSections": "AuditSection[]",
-        "status": "TypeContent",
-        "progress": "int",
-        "score": "int"
-    },
-    "AuditSection" : {
-        "enabled": "boolean",
-        "section": "RbaSection",
-        "planningTopics": "AuditTopic[]"
-    },
-    "AuditTopic": {
-        "enabled": "boolean",
-        "topic": "RbaQuestionTopic",
-        "planningQuestions": "AuditQuestion[]"
-    },
-    "AuditQuestion": {
-        "enabled": "boolean",
-        "question": "RbaQuestion",
-        "answer": "TypeContent",
-        "evidence": "string[]"
-    },
-    "RbaForm": {
-        "title": "string",
-        "status": "DataType",
-        "notes": "string",
-        "history": "RbaFormHistory",
-        "rbaStandard": "RbaStandart",
-        "sections": "RbaSection[]"
-    },
-    "RbaSection": {
-        "title": "string",
-        "icon": "string",
-        "topics": "RbaQuestionTopic[]",
-        "standard": "RbaStandart"
-    },
-    "RbaQuestionTopic": {
-        "title": "string",
-        "description": "string",
-        "progress": "int",
-        "questions": "RbaQuestion[]"
-    },
-    "RbaQuestion": {
-        "title": "string",
-        "description": "string",
-        "evidence": "string",
-        "answer": "DataType",
-        "evaluation": "DataType",
-        "status": "DataType"
-    },
-    "RbaStandart": {
-        "title": "string",
-        "version": "string",
-        "year": "int",
-        "reference": "string",
-        "questions": "RbaSection[]"
-    },
-    "TypeContent": {
-        "name": "string",
-        "description": "string",
-        "code": "string",
-        "immutable": "boolean",
-        "visible": "boolean",
-        "dataType": "DataType"
-    },
-    "DataType": {
-        "name": "string",
-        "description": "string",
-        "code": "string",
-        "immutable": "boolean",
-        "visible": "boolean",
-        "typesValues": "TypeContent[]"
+    {
+        "Provider": {
+            "pid": "string",
+            "name": "string",
+            "address": "string",
+            "city": "string",
+            "stateRegistration": "string",
+            "country": "string",
+            "postalCode": "string",
+            "phone": "string",
+            "homepage": "string",
+            "cnpj": "string"
+        },
+        "ExternalAudit": {
+            "pid": "int",
+            "initialDate": "date",
+            "finalDate": "date",
+            "form": "RbaForm",
+            "provider": "Provider",
+            "planningSections": "AuditSection[]",
+            "status": "TypeContent",
+            "progress": "int",
+            "score": "int"
+        },
+        "AuditSection" : {
+            "pid": "int",
+            "enabled": "boolean",
+            "section": "RbaSection",
+            "planningTopics": "AuditTopic[]"
+        },
+        "AuditTopic": {
+            "pid": "int",
+            "enabled": "boolean",
+            "topic": "RbaQuestionTopic",
+            "planningQuestions": "AuditQuestion[]"
+        },
+        "AuditQuestion": {
+            "pid": "int",
+            "enabled": "boolean",
+            "question": "RbaQuestion",
+            "answer": "TypeContent",
+            "evidence": "string[]"
+        },
+        "RbaForm": {
+            "pid": "int",
+            "title": "string",
+            "status": "DataType",
+            "notes": "string",
+            "history": "RbaFormHistory",
+            "rbaStandard": "RbaStandart",
+            "sections": "RbaSection[]"
+        },
+        "RbaSection": {
+            "pid": "int",
+            "title": "string",
+            "icon": "string",
+            "topics": "RbaQuestionTopic[]",
+            "standard": "RbaStandart"
+        },
+        "RbaQuestionTopic": {
+            "pid": "int",
+            "title": "string",
+            "description": "string",
+            "progress": "int",
+            "questions": "RbaQuestion[]"
+        },
+        "RbaQuestion": {
+            "pid": "int",
+            "title": "string",
+            "description": "string",
+            "evidence": "string",
+            "answer": "DataType",
+            "evaluation": "DataType",
+            "status": "DataType"
+        },
+        "RbaStandart": {
+            "pid": "int",
+            "title": "string",
+            "version": "string",
+            "year": "int",
+            "reference": "string",
+            "questions": "RbaSection[]"
+        },
+        "TypeContent": {
+            "pid": "int",
+            "name": "string",
+            "description": "string",
+            "code": "string",
+            "immutable": "boolean",
+            "visible": "boolean",
+            "dataType": "DataType"
+        },
+        "DataType": {
+            "pid": "int",
+            "name": "string",
+            "description": "string",
+            "code": "string",
+            "immutable": "boolean",
+            "visible": "boolean",
+            "typesValues": "TypeContent[]"
+        }
     }
-  }
