@@ -6,8 +6,8 @@
       "provider": "Provider",
       "planningSections": "AuditSection[]",
       "status": "TypeContent",
-      "progress": "number",
-      "score": "number"
+      "progress": "int",
+      "score": "int"
     },
     "AuditSection" : {
       "enabled": "boolean",
@@ -42,7 +42,7 @@
       "RbaQuestionTopic": {
         "title": "string",
         "description": "string",
-        "progress": "number",
+        "progress": "int",
         "questions": "RbaQuestion[]"
       },
       "RbaQuestion": {
@@ -56,8 +56,24 @@
       "RbaStandart": {
         "title": "string",
         "version": "string",
-        "year": "number",
+        "year": "int",
         "reference": "string",
         "questions": "RbaSection[]"
+      },
+      "TypeContent": {
+        "name": "string",
+        "description": "string",
+        "code": "string",
+        "immutable": "boolean",
+        "visible": "boolean",
+        "dataType": "DataType"
+      },
+      "DataType": {
+        "name": "string",
+        "description": "string",
+        "code": "string",
+        "immutable": "boolean",
+        "visible": "boolean",
+        "typesValues": "TypeContent[]"
       }
   }
