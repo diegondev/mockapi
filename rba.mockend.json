@@ -1,4 +1,16 @@
 {
+    "Provider": {
+        "pid": "string",
+        "name": "string",
+        "address": "string",
+        "city": "string",
+        "stateRegistration": "string",
+        "country": "string",
+        "postalCode": "string",
+        "phone": "string",
+        "homepage": "string",
+        "cnpj": "string"
+    },
     "ExternalAudit": {
       "initialDate": "string",
       "finalDate": "string",
